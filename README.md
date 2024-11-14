@@ -91,10 +91,3 @@ TripPlanner is a feature-rich Android application designed for organizing and ma
    - **Firebase Storage**: Enable storage for uploading and storing profile pictures, flight tickets, and lodging confirmations.
 4. Download the `google-services.json` file and place it in the `app` directory of your project.
 
-### API Key Setup for Google Places
-
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
-2. Enable the **Places API** for the project.
-3. Obtain the API key and add it to your project’s configuration files:
-   ```kotlin
-   private const val PLACES_API_KEY = "YOUR_GOOGLE_PLACES_API_KEY"
