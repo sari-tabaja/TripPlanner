@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">HW1</string>
+    <string name="app_name">TripPlanner</string>
+    <string name="logout">Logout</string>
+    <string name="add_trip">add_trip</string>  <!-- Add this line -->
+    <string name="add_plan">Add Plan</string>
+    <string name="profile_image_desc">Profile</string>
+    <string name="plan_type_icon">Plan Type Icon</string>
+
+
+
 </resources>

@@ -1,0 +1,135 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back"
+                android:layout_gravity="start"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <!-- Trip Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/trip_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Trip Image -->
+                    <ImageView
+                        android:id="@+id/trip_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/airplane"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true" />
+
+                    <!-- Trip Title -->
+                    <TextView
+                        android:id="@+id/trip_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trip Title"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_toEndOf="@id/trip_image"
+                        android:layout_alignParentTop="true" />
+
+                    <!-- Trip Date -->
+                    <TextView
+                        android:id="@+id/trip_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sat, 19 Oct 2024"
+                        android:textSize="14sp"
+                        android:textColor="#777"
+                        android:layout_below="@id/trip_title"
+                        android:layout_toEndOf="@id/trip_image"
+                        android:layout_marginTop="8dp" />
+
+                    <!-- Share Trip Button -->
+                    <Button
+                        android:id="@+id/buttonShareTrip"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="Share Trip" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Unified RecyclerView for displaying all plans sorted by date and time -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_plan_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <!-- No Plans Message -->
+            <TextView
+                android:id="@+id/no_plans_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No plans added yet"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="240dp"
+                android:visibility="gone" />
+
+            <!-- Add Plan Button -->
+            <Button
+                android:id="@+id/addPlanButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Add Plan"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="?attr/colorPrimary" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Action Button for Add (Plus Icon) -->
+    <ImageButton
+        android:id="@+id/fab_add_plan"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_add_trip"
+        android:backgroundTint="?attr/colorPrimary"
+        android:scaleType="fitCenter"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/add_trip"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp" />
+</FrameLayout>

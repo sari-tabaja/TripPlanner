@@ -1,0 +1,62 @@
+<!-- res/layout/item_flight.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Flight Date -->
+    <TextView
+        android:id="@+id/flight_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturday, 19 October 2024"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Flight Info Row (Icon, Departure Time, Route, Flight Number) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Flight Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/flight" />
+
+        <!-- Departure Time -->
+        <TextView
+            android:id="@+id/departure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp" />
+
+        <!-- Route (e.g., HFA - TLV) -->
+        <TextView
+            android:id="@+id/departure_to_arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HFA – TLV"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Flight Number and Airline -->
+        <TextView
+            android:id="@+id/flight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AS 1771 (Alaska Airlines)"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

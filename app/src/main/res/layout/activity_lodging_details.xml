@@ -1,0 +1,136 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back" />
+
+        <!-- Lodging Abbreviation (Title) -->
+        <TextView
+            android:id="@+id/lodging_abbreviation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel Bcn Princess"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <!-- Full Lodging Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Lodging Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/lodging_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample Lodging Name"
+            android:textSize="14sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Check-in Date and Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check-in Date &amp; Time"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/check_in_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: 10/11/2024"
+            android:textSize="14sp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/check_in_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time: 14:00"
+            android:textSize="14sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Check-out Date and Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check-out Date &amp; Time"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/check_out_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: 13/11/2024"
+            android:textSize="14sp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/check_out_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time: 10:00"
+            android:textSize="14sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123 Main Street, City"
+            android:textSize="14sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Documents Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Documents"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+        <ImageView
+            android:id="@+id/document_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/booking"
+            android:contentDescription="Open Document" />
+    </LinearLayout>
+</ScrollView>

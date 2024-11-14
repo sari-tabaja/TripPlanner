@@ -1,0 +1,72 @@
+<!-- res/layout/item_lodging.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+
+    <!-- Lodging Icon (Large) -->
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/lodging"
+        android:layout_marginEnd="8dp" /> <!-- Reduced margin between icon and text -->
+
+    <!-- Lodging Details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Lodging Name -->
+        <TextView
+            android:id="@+id/lodging_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lodging Name"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingBottom="2dp" /> <!-- Slight padding for clarity -->
+
+        <!-- Check-in and Check-out Dates Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <!-- Check-in Date -->
+            <TextView
+                android:id="@+id/check_in_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check-in: 10/11/2024"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <!-- Check-out Date -->
+            <TextView
+                android:id="@+id/check_out_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check-out: 13/11/2024"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 Main Street, City, Country"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
+
+

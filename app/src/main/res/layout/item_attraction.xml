@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Attraction Icon -->
+    <ImageView
+        android:id="@+id/attraction_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/activity"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <!-- Attraction Name -->
+    <TextView
+        android:id="@+id/attraction_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attraction Name"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/attraction_icon"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"/>
+
+    <!-- Attraction Date -->
+    <TextView
+        android:id="@+id/attraction_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_below="@id/attraction_name"
+        android:layout_toEndOf="@id/attraction_icon"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"/>
+
+    <!-- Attraction Time -->
+    <TextView
+        android:id="@+id/attraction_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_below="@id/attraction_date"
+        android:layout_toEndOf="@id/attraction_icon"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"/>
+</RelativeLayout>

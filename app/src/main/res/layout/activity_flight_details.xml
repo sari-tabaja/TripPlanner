@@ -1,0 +1,172 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back" />
+
+        <!-- Flight Route -->
+        <TextView
+            android:id="@+id/flight_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure City ➔ Arrival City"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <!-- Flight Number and Airline -->
+        <TextView
+            android:id="@+id/flight_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flight Number (Airline)"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:paddingTop="4dp" />
+
+        <!-- Departure Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEPARTURE"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/flight" />
+
+            <TextView
+                android:id="@+id/departure_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Time"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/departure_airport"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:hint="Departing City or Airport"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Arrival Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ARRIVAL"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/flight" />
+
+            <TextView
+                android:id="@+id/arrival_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Time"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/arrival_airport"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:hint="Arriving City or Airport"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Flight Details Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FLIGHT DETAILS"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/airline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Airline"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/flight_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Flight Number"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+
+        <!-- Add Document Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOCUMENTS"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />
+        <ImageView
+            android:id="@+id/document_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/ticket_flight"
+            android:contentDescription="Open Document" />
+
+
+    </LinearLayout>
+</ScrollView>

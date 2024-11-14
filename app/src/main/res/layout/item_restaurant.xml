@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Restaurant Icon -->
+    <ImageView
+        android:id="@+id/restaurant_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/restaurant"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <!-- Restaurant Name -->
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Name"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/restaurant_icon"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"/>
+
+    <!-- Date Label and Value -->
+    <TextView
+        android:id="@+id/restaurant_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textStyle="bold"
+        android:layout_below="@id/restaurant_name"
+        android:layout_toEndOf="@id/restaurant_icon"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/restaurant_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2024-11-11"
+    android:layout_toEndOf="@id/restaurant_date_label"
+    android:layout_alignBaseline="@id/restaurant_date_label"
+    android:layout_marginStart="4dp"
+    android:textSize="14sp"/>
+
+    <!-- Time Label and Value -->
+    <TextView
+        android:id="@+id/restaurant_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:textStyle="bold"
+        android:layout_below="@id/restaurant_date_label"
+        android:layout_toEndOf="@id/restaurant_icon"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/restaurant_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18:30"
+    android:layout_toEndOf="@id/restaurant_time_label"
+    android:layout_alignBaseline="@id/restaurant_time_label"
+    android:layout_marginStart="4dp"
+    android:textSize="14sp"/>
+</RelativeLayout>
